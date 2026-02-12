@@ -1,4 +1,5 @@
-import dill, sys
+import dill
+import sys
 
 def get_pickle_protocol(filename: str) -> int:
     with open(filename, "rb") as f:
