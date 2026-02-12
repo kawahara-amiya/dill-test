@@ -1,1 +1,157 @@
-"<Modules.detector.freq2.SaveData object at 0x7d4d81ef8278>"
+{
+  "__class__": "SaveData",
+  "__module__": "Modules.detector.freq2",
+  "attrs": {
+    "prob_dens_func": {
+      "__class__": "gaussian_kde",
+      "__module__": "scipy.stats.kde",
+      "attrs": {
+        "dataset": "[[0.  0.  0.  0.  0.  0.  0.  0.1]]",
+        "d": 1,
+        "n": 8,
+        "covariance_factor": {
+          "__class__": "method",
+          "__module__": "builtins",
+          "attrs": {}
+        },
+        "_weights": "[0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125]",
+        "_neff": 8.0,
+        "factor": 0.6597539553864471,
+        "_data_covariance": "[[0.00125]]",
+        "_data_inv_cov": "[[800.]]",
+        "covariance": "[[0.00054409]]",
+        "inv_cov": "[[1837.917368]]",
+        "log_det": -5.678511277930516
+      }
+    },
+    "bw_method": "scott",
+    "min_handle": 0.0,
+    "max_handle": 1.1390625,
+    "inflate_size": 0,
+    "inflate_scale": 10,
+    "inflate_model": {
+      "__class__": "norm_gen",
+      "__module__": "scipy.stats._continuous_distns",
+      "attrs": {
+        "_stats_has_moments": false,
+        "_random_state": "RandomState(MT19937)",
+        "_rvs_uses_size_attribute": false,
+        "_rvs_size_warned": false,
+        "_ctor_param": {
+          "momtype": 1,
+          "a": -Infinity,
+          "b": Infinity,
+          "xtol": 1e-14,
+          "badvalue": NaN,
+          "name": "norm",
+          "longname": null,
+          "shapes": null,
+          "extradoc": null,
+          "seed": null
+        },
+        "badvalue": NaN,
+        "name": "norm",
+        "a": -Infinity,
+        "b": Infinity,
+        "xtol": 1e-14,
+        "moment_type": 1,
+        "shapes": null,
+        "_parse_args": {
+          "__class__": "method",
+          "__module__": "builtins",
+          "attrs": {}
+        },
+        "_parse_args_stats": {
+          "__class__": "method",
+          "__module__": "builtins",
+          "attrs": {}
+        },
+        "_parse_args_rvs": {
+          "__class__": "method",
+          "__module__": "builtins",
+          "attrs": {}
+        },
+        "numargs": 0,
+        "_ppfvec": {
+          "__class__": "vectorize",
+          "__module__": "numpy",
+          "attrs": {
+            "pyfunc": {
+              "__class__": "method",
+              "__module__": "builtins",
+              "attrs": {}
+            },
+            "cache": false,
+            "signature": null,
+            "_ufunc": {},
+            "__doc__": null,
+            "otypes": "d",
+            "excluded": "set()",
+            "_in_and_out_core_dims": null,
+            "nin": 1
+          }
+        },
+        "vecentropy": {
+          "__class__": "vectorize",
+          "__module__": "numpy",
+          "attrs": {
+            "pyfunc": {
+              "__class__": "method",
+              "__module__": "builtins",
+              "attrs": {}
+            },
+            "cache": false,
+            "signature": null,
+            "_ufunc": {},
+            "__doc__": null,
+            "otypes": "d",
+            "excluded": "set()",
+            "_in_and_out_core_dims": null
+          }
+        },
+        "_cdfvec": {
+          "__class__": "vectorize",
+          "__module__": "numpy",
+          "attrs": {
+            "pyfunc": {
+              "__class__": "method",
+              "__module__": "builtins",
+              "attrs": {}
+            },
+            "cache": false,
+            "signature": null,
+            "_ufunc": {},
+            "__doc__": null,
+            "otypes": "d",
+            "excluded": "set()",
+            "_in_and_out_core_dims": null,
+            "nin": 1
+          }
+        },
+        "extradoc": null,
+        "generic_moment": {
+          "__class__": "vectorize",
+          "__module__": "numpy",
+          "attrs": {
+            "pyfunc": {
+              "__class__": "method",
+              "__module__": "builtins",
+              "attrs": {}
+            },
+            "cache": false,
+            "signature": null,
+            "_ufunc": {},
+            "__doc__": null,
+            "otypes": "d",
+            "excluded": "set()",
+            "_in_and_out_core_dims": null,
+            "nin": 1
+          }
+        },
+        "__doc__": "A normal continuous random variable.\n\n    The location (``loc``) keyword specifies the mean.\n    The scale (``scale``) keyword specifies the standard deviation.\n\n    As an instance of the `rv_continuous` class, `norm` object inherits from it\n    a collection of generic methods (see below for the full list),\n    and completes them with details specific for this particular distribution.\n    \n    Methods\n    -------\n    rvs(loc=0, scale=1, size=1, random_state=None)\n        Random variates.\n    pdf(x, loc=0, scale=1)\n        Probability density function.\n    logpdf(x, loc=0, scale=1)\n        Log of the probability density function.\n    cdf(x, loc=0, scale=1)\n        Cumulative distribution function.\n    logcdf(x, loc=0, scale=1)\n        Log of the cumulative distribution function.\n    sf(x, loc=0, scale=1)\n        Survival function  (also defined as ``1 - cdf``, but `sf` is sometimes more accurate).\n    logsf(x, loc=0, scale=1)\n        Log of the survival function.\n    ppf(q, loc=0, scale=1)\n        Percent point function (inverse of ``cdf`` --- percentiles).\n    isf(q, loc=0, scale=1)\n        Inverse survival function (inverse of ``sf``).\n    moment(n, loc=0, scale=1)\n        Non-central moment of order n\n    stats(loc=0, scale=1, moments='mv')\n        Mean('m'), variance('v'), skew('s'), and/or kurtosis('k').\n    entropy(loc=0, scale=1)\n        (Differential) entropy of the RV.\n    fit(data)\n        Parameter estimates for generic data.\n        See `scipy.stats.rv_continuous.fit <https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.rv_continuous.fit.html#scipy.stats.rv_continuous.fit>`__ for detailed documentation of the\n        keyword arguments.\n    expect(func, args=(), loc=0, scale=1, lb=None, ub=None, conditional=False, **kwds)\n        Expected value of a function (of one argument) with respect to the distribution.\n    median(loc=0, scale=1)\n        Median of the distribution.\n    mean(loc=0, scale=1)\n        Mean of the distribution.\n    var(loc=0, scale=1)\n        Variance of the distribution.\n    std(loc=0, scale=1)\n        Standard deviation of the distribution.\n    interval(alpha, loc=0, scale=1)\n        Endpoints of the range that contains alpha percent of the distribution\n\n    Notes\n    -----\n    The probability density function for `norm` is:\n\n    .. math::\n\n        f(x) = \\frac{\\exp(-x^2/2)}{\\sqrt{2\\pi}}\n\n    for a real number :math:`x`.\n\n    The probability density above is defined in the \"standardized\" form. To shift\n    and/or scale the distribution use the ``loc`` and ``scale`` parameters.\n    Specifically, ``norm.pdf(x, loc, scale)`` is identically\n    equivalent to ``norm.pdf(y) / scale`` with\n    ``y = (x - loc) / scale``.\n\n    Examples\n    --------\n    >>> from scipy.stats import norm\n    >>> import matplotlib.pyplot as plt\n    >>> fig, ax = plt.subplots(1, 1)\n    \n    Calculate a few first moments:\n    \n    \n    >>> mean, var, skew, kurt = norm.stats(moments='mvsk')\n    \n    Display the probability density function (``pdf``):\n    \n    >>> x = np.linspace(norm.ppf(0.01),\n    ...                 norm.ppf(0.99), 100)\n    >>> ax.plot(x, norm.pdf(x),\n    ...        'r-', lw=5, alpha=0.6, label='norm pdf')\n    \n    Alternatively, the distribution object can be called (as a function)\n    to fix the shape, location and scale parameters. This returns a \"frozen\"\n    RV object holding the given parameters fixed.\n    \n    Freeze the distribution and display the frozen ``pdf``:\n    \n    >>> rv = norm()\n    >>> ax.plot(x, rv.pdf(x), 'k-', lw=2, label='frozen pdf')\n    \n    Check accuracy of ``cdf`` and ``ppf``:\n    \n    >>> vals = norm.ppf([0.001, 0.5, 0.999])\n    >>> np.allclose([0.001, 0.5, 0.999], norm.cdf(vals))\n    True\n    \n    Generate random numbers:\n    \n    >>> r = norm.rvs(size=1000)\n    \n    And compare the histogram:\n    \n    >>> ax.hist(r, density=True, histtype='stepfilled', alpha=0.2)\n    >>> ax.legend(loc='best', frameon=False)\n    >>> plt.show()\n    \n\n    "
+      }
+    },
+    "min_prob_dens": 2.2250738585072014e-308,
+    "normalize_score": true
+  }
+}
