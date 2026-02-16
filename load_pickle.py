@@ -45,6 +45,12 @@ print("Pickle protocol:", proto)
 with open(file_name, "rb") as f:
     obj = dill.load(f)
 
+# ファイルをbytesに変換して容量をkbで表示
+with open(file_name, "rb") as f:
+    file_bytes = f.read()
+    file_size_kb = len(file_bytes) / 1024
+    print(f"File size: {file_size_kb:.2f} KB")
+
 print(type(obj))
 print(obj)
 
@@ -52,6 +58,11 @@ print(obj)
 json_file = file_name.replace(".pkl", ".json")
 with open(json_file, "w") as f:
     json.dump(encode_obj(obj), f, indent=2)
+
+# JSON ファイルの容量を KB で表示
+with open(json_file, "rb") as f:
+    json_size_kb = len(f.read()) / 1024
+    print(f"JSON file size: {json_size_kb:.2f} KB")
 
 print(f"Exported to {json_file}")
 
